@@ -26,6 +26,7 @@ $("section .form form2 input").keypress(function(){
         $(this).css("background","none");
     };
 })
+
 //验证码
 var p1Obj=document.getElementsByTagName("p")[0];
 var p2Obj=document.getElementsByTagName("p")[1];
@@ -59,13 +60,64 @@ return parseInt(Math.random()*(max-min)+min)
 //信息判断1先读取数据，数据修改之后判断，判断正确则进入主页，
 //判断错误则弹出注册信息。
 var  message=localStorage.getItem("user");
+
+console.log(localStorage.getItem("user"))
 var  account=message.split("&");
+// 判断验证码
+var x=false;
+$(".form1 input:eq(2)").blur(function(){
+    var str3=$(".form1 input:eq(2)").val();
+    
+    if(str3!==p1Obj.innerHTML){
+        alert("验证码错误")
+        return x=false;
+    }else{
+        return x=true;
+    }
+ })
+ 
+$(".form1 input:eq(4)").click(function(){
+     //给登录绑定事件点击事件然后进行判断
+     //首先先读取localstorage的值与val值判断是否相等
+     if(x){
+         console.log(11111111111)
+         for(var i=0;i<account.length;i++){
+             if(account[i]==$(".form1 input:eq(0)").val()){
+                if(account[i+1]==$(".form1 input:eq(1)").val()){
+                    window.location.href="http://localhost/Moreshopping/index.html";
+                }
+             }
+         }
+     }
+})
 
-$(".form1 input:eq(0)").blur(
+var y=false;
+$(".form2 input:eq(2)").blur(function(){
+    var str3=$(".form2 input:eq(2)").val();
+    
+    if(str3!==p2Obj.innerHTML){
+        alert("验证码错误")
+        return y=false;
+    }else{
+        return y=true;
+    }
+ })
+ 
+$(".form2 input:eq(4)").click(function(){
+     //给登录绑定事件点击事件然后进行判断
+     //首先先读取localstorage的值与val值判断是否相等
+     if(y){
+         for(var i=0;i<account.length;i++){
+             if(account[i]==$(".form2 input:eq(0)").val()){
 
-)
-
-
+                if(account[i+1]==$(".form2 input:eq(1)").val()){
+                  // 
+                    window.location.href="http://localhost/Moreshopping/index.html";
+                }
+             }
+         }
+     }
+})
 
 
 

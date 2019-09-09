@@ -67,7 +67,7 @@ $("form input:eq(2)").blur(function(){
 
 
     //1点击之后存储数据进行跳转；
-   var message=""
+  
    $(".sub").click(function(){
      console.log(x,y,z);
      var checkObj=document.querySelector(".check");
@@ -78,11 +78,11 @@ $("form input:eq(2)").blur(function(){
          var pass= $("form input:eq(1)").val();
          //2进行拼接
         
-          message+=`${user}&${pass}&`;
-         
+         var  message=`${user}&${pass}&`;
+         localStorage.setItem("user",message);    
       // console.log(str);
          //3存储数据 
-            localStorage.setItem("user",message);
+           
          
       // console.log(localStorage.getItem("user"))
         
