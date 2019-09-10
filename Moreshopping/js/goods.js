@@ -44,7 +44,7 @@ class Goods{
     //li有多个绑定每个li的input标签 设置事件存储当前点击事件元的数据（数据中有id值）
     //如何判断存储的是哪个数据，首先点击li时有此时的数据，数据的id值就是当前数据，存储到localstorage
         var that=this;
-        this.num=0;
+     
         that.ulObj.addEventListener("click",function(eve){
            var e=eve||window.event
            var target=e.target||e.srcElement;
@@ -52,33 +52,35 @@ class Goods{
             //点击进入时判断点击次数   在购物车中显示数量
     
            //获取当前数据的唯一id值存储到localstorage；
-             num++;
+             
              that.id=target.parentNode.getAttribute("commodity")
              that.setLocal()
+        
              //再此判断数据的点击的次数根据id重复出现的次数（就是点击添加的数量，在购车中也能做
            } 
+           if(target.className=="buy"){
+               location.href="http://localhost/Moreshopping/detail.html";
+           }
         })
    }
    setLocal(){
        //点击次数为1 时，添加数据存储到localstorage；
        //点击次数大于1时则说明已存储。
-     if(num==1){
+      
+       var  str=""
          for(var i=0;i<this.res.length;i++){ 
-            
-             if(this.res[i].id===this.id){
+             if(this.res[i].id==this.id){
                  //找到了当前的数据存储，并存储
-             localStorage.setItem("goods",JSON.stringify(this.res[i]))
-                    //        this.goods[i].num ++;
-                    //    }else{
-                    //        this.goods.push({
-                    //            id:this.id,
-                    //            num:1
-                    //        })
+
+                var message=JSON.stringify(this.res[i]);
+                str+=message;
+              
+                  
             }
+            localStorage.setItem("goods",str)
          }
+        
      }
-   
-    }
 
  }
     new Goods();

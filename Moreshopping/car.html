@@ -5,12 +5,64 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>Document</title>
+    <link rel="stylesheet" href="./css/public.css">
+    <link rel="stylesheet" href="./css/car.css">
+    <style>
+     table{width:1200px;margin: 0 auto;}
+     table thead{height:130px;border-bottom:2px solid #ddd;}
+     table thead tr th{font:12px/120px "";color:#9c98a3;width: 30px;}
+     table tbody tr {border-bottom:1px solid  #ddd;}  
+     table tbody tr td{height:156px;width:120px;}
+
+
+     tfoot tr{}
+     tfoot tr th{}
+     tfoot tr th input.btn{width:160px;height:70px;background:#f2323b }
+    </style>
 </head>
 <body>
     <head></head>
     <section>
-
+           
+            <table>
+                <thead>
+                    <tr>
+                        <th><input type="checkbox">全选</th>
+                        <th>商品信息</th>
+                        <th>规格</th>
+                        <th>单价</th>
+                        <th>总数</th>
+                        <th>小计</th>
+                        <th>操作</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td><input type="checkbox"></td>
+                        <td>name</td>
+                        <td>s</td>
+                        <td><input type="number" value="0"></td>
+                        <th>总数</th>
+                        <td>price</td>
+                        <td>删除</td>
+                    </tr>
+                </tbody>
+                <tfoot>
+                    <tr>
+                        <th><input type="checkbox"></th>
+                        <th>删除</th>
+                        <th>已进货<b>0</b>件</th>
+                        <th>总计<span>0</span></th>
+                        <th><input type="button" value="结算" class="btn"></th>           
+                    </tr> 
+                </tfoot>
+            </table>
     </section>
     <footer></footer>
 </body>
+<script>
+        $("header").load("http://localhost/Moreshopping/index.html  #header ")
+        $("header").load("http://localhost/Moreshopping/index.html  #search ")
+        $("footer").load("http://localhost/Moreshopping/index.html   #footer")
+      </script>
 </html>

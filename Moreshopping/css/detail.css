@@ -128,6 +128,31 @@
           margin-top: 13px; }
       #list .goods .detail .detail-r {
         float: right; }
+        #list .goods .detail .detail-r ul li.li1 {
+          width: 546px;
+          height: 90px;
+          background: red; }
+        #list .goods .detail .detail-r ul li.li2 {
+          width: 546px;
+          height: 184px; }
+          #list .goods .detail .detail-r ul li.li2 p span {
+            font: 16px/32px ""; }
+          #list .goods .detail .detail-r ul li.li2 p b {
+            font: 12px/36px ""; }
+        #list .goods .detail .detail-r ul li.li3 a {
+          display: inline-block;
+          width: 100px;
+          font: 14px/28px "";
+          padding: 0 5px; }
+        #list .goods .detail .detail-r ul li.li4 input {
+          width: 27px;
+          height: 27px;
+          border: 1px solid #e5e5e5; }
+          #list .goods .detail .detail-r ul li.li4 input .size dl dd span {
+            display: inline-block;
+            width: 20px;
+            height: 27px;
+            font: 12px/44px ""; }
   #list .brand {
     float: right; }
 

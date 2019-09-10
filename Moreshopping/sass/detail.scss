@@ -71,10 +71,28 @@ $floatl:left;
             }
             .detail-r{float: right;
                 ul{
-                    li{}
-                    li{}
-                    li{}
-                    li{}
+                    li.li1{width:546px;height:90px;background:red;}
+                    li.li2{width:546px;height:184px;
+                        p{  
+                            span{font:16px/32px "";}
+                            b{font: 12px/36px ""}
+                        }
+                    }
+                    li.li3{
+                        a{display: inline-block;width:100px;font:14px/28px "";padding:0 5px;}
+                    }
+                    li.li4{ 
+                        input{width:27px;height:27px;border:1px solid #e5e5e5;
+                        .size{
+                            dl{
+                                dd{
+                                    span{display:inline-block;width:20px;height:27px;font:12px/44px "";}
+
+                                }
+                            }
+
+                        }
+                    }}
                 }
             }
         }
