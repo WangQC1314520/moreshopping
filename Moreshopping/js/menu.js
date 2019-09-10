@@ -17,9 +17,10 @@ class List{
     constructor(){
         this.url="http://localhost/Moreshopping/data/menu.json";
         this.menuLi=document.querySelectorAll("#mainNav .margin .table ul li");
-        console.log(this.menuLi);
+     //   console.log(this.menuLi);
+         
         this.load();
-        this.display();
+       // this.display();
     }
     // 下载数据
     load(){
@@ -30,49 +31,58 @@ class List{
               //  console.log(res);
                 that.res=JSON.parse(res);
              //   console.log(that.res[0].menu1);
-                
+                that.display();
             }
         })
     }
     display(){
-
-    //    for(var i=0;i<this.res.length;i++){
-
-    //    }
+        var that=this;
+      //  console.log(that)
+        for (var i=0;i<this.menuLi.length;i++){
+            //确定好获取的节点。
+        // console.log(this.menuLi[i].children[0].children[1])
+        //把每个获取到的数传输
+            for(var j=0;j<that.res.length;j++){ 
+            this.menuLi[i].children[0].children[1].innerHTML=that.res[i].menu1
+            }
+        }
+        // for (var i=0;i<this.menuLi.length;i++){
+          console.log(this.menuLi[0].children[1]) 
+        // }
+     //把json数据分割成数组然后循环添加
+     //   console.log(${that.res[0].menu2.split(",")})
+     //  console.log(that.res[0].menuS.split(","));
+        var str="";
+        for(var i=0;i<this.menuLi.length;i++){
+        str=`                
+            <dl>
+                <dd><span>${that.res[i].menu2.split(",")[0]}</span></dd>
+                <dd><span>${that.res[i].menu2.split(",")[1]}</span></dd>
+                <dd><span>${that.res[i].menu2.split(",")[2]}</span></dd>
+                <dd><span>${that.res[i].menu2.split(",")[3]}</span></dd>
+                <dd><span>${that.res[i].menu2.split(",")[4]}</span></dd>
+                <dd><span>${that.res[i].menu2.split(",")[5]}</span></dd>
+                <dd><span>${that.res[i].menu2.split(",")[6]}</span></dd>
+            </dl>
+            <div class="menu2-bottom">
+               <div class="list">
+                   <p><span>${that.res[i].menuS.split(",")[0]}：</span><b>data</b></p> 
+                   <p><span>${that.res[i].menuS.split(",")[1]}：</span><b>data</b></p>
+                   <p><span>${that.res[i].menuS.split(",")[2]}：</span><b>data</b></p>
+                   <p><span>${that.res[i].menuS.split(",")[3]}：</span><b>data</b></p>
+                   <p><span>${that.res[i].menuS.split(",")[4]}：</span><b>data</b></p>
+                   <p><span>${that.res[i].menuS.split(",")[5]}：</span><b>data</b></p>
+                   <p><span>${that.res[i].menuS.split(",")[6]}：</span><b>data</b></p>         
+               </div>
+                <div class="photo">
+                    <img src="${that.res[i].images1}" alt="data">
+                    <img src="${that.res[i].images2}" alt="data">
+                </div>
+            </div>`
+            this.menuLi[i].children[1].innerHTML=str;
+       }
     }
-
-//     display(){
-//         var str="";
-//         for(var i=0;i<this.res.length;i++){
-//             str+=`<div class="goods" commodity="${this.res[i].goodsId}">
-//         <img src="date/${this.res[i].url}" alt="">
-//         <p>${this.res[i].name}物美价廉，特价出售<p>
-//         <p>价格特价出售<span>${this.res[i].price}</span></p>
-//         <p>${this.res[i].tip}</p>
-//         <i class="btn">加入购物车<i>
-//     </div> `
-
-//         }
-
-//      this.box.innerHTML=str;
-//    }
-//    //事件委托机制  获取元素添加事件
-//    addevent(){
-//        var that=this;
-//        this.box.addEventListener("click",function(eve){
-           
-//           var e=eve||window.event
-//           var target=e.target||e.srcElement
-//           if(target.className=="btn"){
-//             //  console.log(target)
-//             that.id=target.parentNode.getAttribute("commodity")
-//             that.setLocal();// start storage
-//           } 
-//        })
-//    }
-//    //点
-
-
+  
 
 }
 new List;

@@ -45,7 +45,7 @@
 .menu2 .menu2-bottom .list p span{font:12px/28px "";color:#000; margin:0 10px;  }
 .menu2 .menu2-bottom .list p b{font:12px/28px "";color: #7e8274;margin:0 5px;}
 .menu2 .menu2-bottom .photo{float: right;}
-.menu2 .menu2-bottom .photo img{display: block;width:100px;height:100px;}
+.menu2 .menu2-bottom .photo img{display: block;width:100px;height:150px;margin:14px 5px;}
 
 #banner{background: #f1f3f0;height:447px; }
 #banner  .box{float:left;width:731px;height:447px;margin-left:153px;position: relative;overflow: hidden;}
