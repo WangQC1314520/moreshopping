@@ -20,6 +20,10 @@
   height: 90px;
   background: #f1f3f0;
   padding-top: 30px; }
+  #search a.logo {
+    float: left;
+    margin-top: 15px;
+    margin-right: 106px; }
   #search .search-c {
     float: left; }
     #search .search-c .txt {
@@ -63,6 +67,21 @@
       background: url(../images/itag.png);
       background-position: bottom; }
 
+#nav ul {
+  overflow: hidden;
+  padding-left: 14px;
+  border-bottom: 2px solid #f0123a; }
+  #nav ul li {
+    float: left;
+    height: 35px; }
+    #nav ul li a {
+      display: block;
+      font: 14px/35px "";
+      background: #fff;
+      padding: 0 15px; }
+    #nav ul li :hover {
+      background: #f3210a; }
+
 #nav .banner {
   width: 1263px;
   height: 343px;
@@ -71,14 +90,40 @@
 #detail {
   width: 1263px;
   padding: 90px 77px; }
-  #detail ul li img {
-    display: block;
-    width: 214px;
-    height: 214px; }
-  #detail ul li p {
-    width: 177px;
-    font: 700 12px/26px "";
-    margin-top: 10px; }
+  #detail ul {
+    overflow: hidden; }
+    #detail ul li {
+      float: left;
+      margin: 0 10px 20px 0;
+      width: 214px;
+      text-align: center; }
+      #detail ul li img {
+        display: block;
+        width: 214px;
+        height: 214px; }
+      #detail ul li h4 {
+        width: 177px;
+        font: 700 12px/26px "";
+        margin-top: 10px; }
+      #detail ul li span {
+        display: block;
+        font: 12px /26px "";
+        color: red; }
+      #detail ul li p {
+        font: 12px/30px "";
+        color: #ddd; }
+      #detail ul li input.join {
+        border: 2px solid #d13c47;
+        width: 75px;
+        height: 28px;
+        background: #fff;
+        color: #d13c47; }
+      #detail ul li input.buy {
+        border: 2px solid #d13c47;
+        width: 75px;
+        height: 28px;
+        background: #c91623;
+        color: #eee9ff; }
 
 #footer .line {
   width: 100%;
