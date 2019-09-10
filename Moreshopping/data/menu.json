@@ -12,8 +12,8 @@
        "images1": "http://localhost/h51907/shopping/date/images/1.jpg",
        "images2": "http://loaclhost/h51907/shopping/date/images/2.jpg"
     },
-    { "menu1":"时尚女装",
-        "menu2":"当季流行,秋季新品,衬衫,外套,牛仔裤,鞋子,裙子",
+    { "menu1":"箱包旅行",
+        "menu2":"当季流行,大箱子,小箱子,重箱子,轻箱子,白箱子",
         "menuS":"上衣,裙子,裤子,腰带,短裙,长裙,萝莉裙",
         "menub1":"qunzi,quanzi,哈哈哈,呵呵呵,切切切",
         "menub2":"qunzi,quanzi,哈哈哈,呵呵呵,切切切",
@@ -25,8 +25,8 @@
          "images1": "http://localhost/h51907/shopping/date/images/1.jpg",
          "images2": "http://localhost/h51907/shopping/date/images/2.jpg"
       },
-      { "menu1":"时尚女装",
-        "menu2":"当季流行,秋季新品,衬衫,外套,牛仔裤,鞋子,裙子",
+      { "menu1":"时尚男装",
+        "menu2":"当季流行,秋季新品,内裤,外套,牛仔裤,毛线衣,爱情",
         "menuS":"上衣,裙子,裤子,腰带,短裙,长裙,萝莉裙",
         "menub1":"qunzi,quanzi,哈哈哈,呵呵呵,切切切",
         "menub2":"qunzi,quanzi,哈哈哈,呵呵呵,切切切",
@@ -38,8 +38,8 @@
          "images1": "http://localhost/h51907/shopping/date/images/1.jpg",
          "images2": "http://localhost/h51907/shopping/date/images/2.jpg"
       },
-      { "menu1":"时尚女装",
-        "menu2":"当季流行,秋季新品,衬衫,外套,牛仔裤,鞋子,裙子",
+      { "menu1":"时尚钟表",
+        "menu2":"当季流行,白钟表,蓝钟表,黑钟表,自钟表,红钟表,黄钟表",
         "menuS":"上衣,裙子,裤子,腰带,短裙,长裙,萝莉裙",
         "menub1":"qunzi,quanzi,哈哈哈,呵呵呵,切切切",
         "menub2":"qunzi,quanzi,哈哈哈,呵呵呵,切切切",

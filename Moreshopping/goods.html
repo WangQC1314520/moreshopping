@@ -5,21 +5,39 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>Document</title>
+    <link rel="stylesheet" href="./css/public.css">
+    <link rel="stylesheet" href="./css/goods.css">
 </head>
 <body>
-    <head></head>
-    <section class="detail">
-        <p><span></span></p>
-        <h3>商品名称</h3>
-        <p>商品支付信息</p>
-    </section>
-    <section>
-        <div class="goods">
+    <header></header>
+    <section id="nav">
+          <div></div>
+          <div class="banner">
 
-        </div>
-        <div class="brand"></div>
+          </div>
     </section>
+    <section id="detail">
+        <ul>
+            <li>
+                <img src="" alt="">
+                <p>哈哈哈哈哈哈 哈哈 啊</p>
+                <span>分销价<b>￥99</b></span>
+                <input type="button" value="加入购物车">
+                <input type="button" value="点击购买">
+            </li>
+        </ul>
+    </section>
+    
     <footer>
     </footer>
 </body>
+<script src="./js/jquery.js"></script>
+<script src="./js/ajax-jsonp.js"></script>
+<script>
+
+  $("header").load("http://localhost/Moreshopping/index.html  #header ")
+  $("header").load("http://localhost/Moreshopping/index.html  #search ")
+
+  $("footer").load("http://localhost/Moreshopping/index.html   #footer")
+</script>
 </html>
