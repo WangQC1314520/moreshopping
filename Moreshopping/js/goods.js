@@ -73,9 +73,7 @@ class Goods{
                  //找到了当前的数据存储，并存储
 
                 var message=JSON.stringify(this.res[i]);
-                str+=message;
-              
-                  
+                str+=message
             }
             localStorage.setItem("goods",str)
          }

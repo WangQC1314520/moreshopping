@@ -82,11 +82,16 @@
       #nav ul li :hover {
         background: #f3210a; }
   
-  #nav .banner {
-    width: 1263px;
-    height: 343px;
-    background: url(../images/banner.png) no-repeat center; 
-}
+        table{width:1200px;margin: 0 auto;}
+        table thead{height:130px;border-bottom:2px solid #ddd;}
+        table thead tr th{font:12px/120px "";color:#9c98a3;width: 30px;}
+        table tbody tr {border-bottom:1px solid  #ddd;}  
+        table tbody tr td{height:156px;width:120px;}
+   
+   
+        tfoot tr{}
+        tfoot tr th{}
+        tfoot tr th input.btn{width:160px;height:70px;background:#f2323b }
   
 
   

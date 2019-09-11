@@ -50,23 +50,26 @@ $floatl:left;
 }
 #list{background: #fff;height:800px;
     .goods{float:left;
-        h3{font:24px/52px "";}
+        h3{font:24px/52px "";margin-left:12px;}
         p{overflow: hidden;
-            span{float: left;font: 12px/24px; color:#333;}
-            a{float:right;font: 12px/24px; color:#333;}
+            span{float: left;font: 12px/24px ""; color:#333;margin-left:12px}
+            a{float:right;font: 12px/24px ""; color:#333;margin-left:12px}
         }
-        .detail{overflow: hidden;box-shadow:5px;margin:10px 5px;
-            .detail-l{float: left;
+        .detail{overflow: hidden;
+            .detail-l{float: left;box-shadow:5px;margin:5px 25px 10px 10px;width:450px;
                 img{display: block;width:420px;height:420px;margin:10px;}
-                dl{overflow: hidden;
+                dl{overflow: hidden;width:120%;
                     dd{float: left;
-                        img{display: block;width:59px;height:59px;border:1px solid #d5d5d5;margin:0 10px;}
-                    }:hover{img{
-                        border:#c5270c
-                    }}
+                        img{display: block;width:59px;height:59px;border:2px solid #d5d5d5;margin:0 10px;}
+                        :hover{
+                            border:2px solid #c5270c;
+                        }
+                    }
                 }
                p{
-                   font: 12px/24px "";color:#333;margin-top:13px;
+                   font: 12px/24px "";color:#333;margin-top:13px;overflow: hidden;
+                   span{float: left}
+                   b{float: right}
                }
             }
             .detail-r{float: right;
